@@ -1,0 +1,27 @@
+/* 1️⃣ Importar Tailwind e a fonte primeiro */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* 2️⃣ Regras globais */
+body {
+  margin: 0;
+  background-color: #0a0a0a;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inter', sans-serif;
+}
+
+#root {
+  background-color: #0a0a0a;
+  min-height: 100vh;
+}
+
+/* 3️⃣ Animação flutuante */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
