@@ -2,7 +2,10 @@ import { projectsData } from "../data/projects";
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-[#0a0a0a] px-6 md:px-12 py-16 md:py-24 min-h-screen">
+    <section
+      id="projects"
+      className="bg-[#0a0a0a] px-6 md:px-12 py-16 md:py-24 min-h-screen"
+    >
       {/* Título responsivo: centralizado no mobile, esquerda no desktop */}
       <h2 className="text-white text-3xl md:text-4xl font-bold mb-10 md:mb-16 text-center md:text-left">
         Selected <span className="text-[#22c55e]">Projects</span>
@@ -17,7 +20,7 @@ const Projects = () => {
           >
             {/* Imagem com altura fixa menor no mobile */}
             <div className="relative h-48 sm:h-60 overflow-hidden">
-               <img
+              <img
                 src={project.image}
                 alt={project.title}
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
@@ -38,7 +41,7 @@ const Projects = () => {
                 {project.tech.map((tech, index) => (
                   <span
                     key={index}
-                    className="text-xs md:text-sm text-[#22c55e] border border-[#22c55e]/40 px-3 py-1 rounded-full bg-[#22c55e]/5"
+                    className="inline-block transition-transform duration-300 hover:scale-105 cursor-default text-xs md:text-sm text-[#22c55e] border border-[#22c55e]/40 px-3 py-1 rounded-full bg-[#22c55e]/5"
                   >
                     {tech}
                   </span>
@@ -51,8 +54,10 @@ const Projects = () => {
                 rel="noreferrer"
                 className="inline-flex items-center text-[#22c55e] font-semibold hover:gap-2 transition-all group"
               >
-                View Project 
-                <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>
+                View Project
+                <span className="ml-1 group-hover:translate-x-1 transition-transform">
+                  →
+                </span>
               </a>
             </div>
           </div>

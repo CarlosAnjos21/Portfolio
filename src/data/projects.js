@@ -1,7 +1,6 @@
 import calculadora01Img from "../assets/calculadora01.png";
-//import EcommerceImg from "../assets/ecommerce.png";
+import papelariaImg from "../assets/papelaria.png";
 //import DashboardImg from "../assets/dashboard.png";
-
 
 export const projectsData = [
   {
@@ -15,13 +14,12 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: "E-commerce Cyber",
+    title: "Papelaria virtual",
     description:
-      "Plataforma de vendas com design futurista e pagamentos integrados.",
-    tech: ["React", "Node.js", "MongoDB"],
-    link: "https://carlosanjos21.github.io/",
-    image:
-      "...",
+      "Loja online de papelaria completa com design clean e pagamentos integrados.",
+    tech: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
+    link: "https://daniolivem.github.io/projeto-integrador-papelaria/",
+    image: papelariaImg,
   },
   {
     id: 3,
